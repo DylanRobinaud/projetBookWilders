@@ -51,37 +51,44 @@
       </section>
       <section id="formulaire">
         <h2>Formulaire de recrutement</h2>
-        <form class="form" action="">
-          <div class="eform1">
-            <select name="wilderselect" id="wilderselect">
-              <option value="">Choix du wilder :</option>
-              <option value="">Dylan Robinaud</option>
-              <option value="">AnnDo</option>
-              <option value="">Bastien</option>
-            </select>
-          </div>
-          <div class="eform2">
-            <input type="text" id="firstname" placeholder="Prénom" />
-          </div>
-          <div class="eform3">
-            <input type="text" id="surname" placeholder="Nom" />
-          </div>
-          <div class="eform4">
-            <input type="text" id="mail" placeholder="Email" />
-          </div>
-          <div class="eform5">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="20"
-              placeholder="Votre message"
-            ></textarea>
-          </div>
-          <div class="eform6">
-            <input type="submit" value="Envoyer" />
-          </div>
-        </form>
+        <section class="form">
+          <form>
+            <div class="elementform">
+              <select name="wilderselect" id="wilderselect">
+                <option value="">Choix du wilder :</option>
+                <option value="">Dylan</option>
+                <option value="">AnnDo</option>
+                <option value="">Bastien</option>
+              </select>
+            </div>
+
+            <div class="elementform">
+              <input
+                type="text"
+                id="namecompany"
+                placeholder="Nom de votre entreprise"
+              />
+            </div>
+
+            <div class="elementform">
+              <input type="text" id="mail" placeholder="Email" />
+            </div>
+
+            <div class="elementform">
+              <textarea
+                name="message"
+                id="message"
+                cols="40"
+                rows="20"
+                placeholder="Votre message"
+              ></textarea>
+            </div>
+
+            <div class="elementform">
+              <input type="submit" value="Envoyer" />
+            </div>
+          </form>
+        </section>
       </section>
     </main>
   </body>
