@@ -8,52 +8,58 @@
     background-image: url(assets/4525039-binaire-code-background-abstract-technology-digital-binary-data-and-secure-data-concept-gratuit-photo.jpg);
     background-size: cover;
   }
+  
+  .container_card {
+    .deck {
+      display: none;
+    }
+    .card {
+      max-width: 22rem;
+      border: solid 0.5rem #2686ff;
+      border-radius: 1.5%;
+      margin: auto;
 
-  .card {
-    max-width: 22rem;
-    border: solid 0.5rem #2686ff;
-    border-radius: 1.5%;
-
-    .maincard {
-      background-color: #c8e2f3;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-
-      padding: 0.5rem;
-      .topcard {
-        width: 100%;
+      .maincard {
+        background-color: #c8e2f3;
         display: flex;
-        justify-content: center;
-        border-radius: 0.5rem;
-        background-color: #18487f;
-        h2 {
-          margin: 1rem;
-          color: #c8e2f3;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        padding: 0.5rem;
+        .topcard {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          border-radius: 0.5rem;
+          background-color: #18487f;
+          h2 {
+            margin: 1rem;
+            color: #c8e2f3;
+          }
         }
-      }
-      .avatar {
-        display: flex;
-        justify-content: center;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        img {
-          border-radius: 100%;
-          width: 70%;
-          background-color: white;
+        .avatar {
+          display: flex;
+          justify-content: center;
+          padding-top: 2.5rem;
+          padding-bottom: 2.5rem;
+          img {
+            border-radius: 100%;
+            width: 70%;
+            background-color: white;
+          }
         }
-      }
-      .skills {
-        border-radius: 0.5rem;
-        background-color: #18487f;
-        p {
-          padding: 0 1rem;
-          color: #c8e2f3;
+        .skills {
+          border-radius: 0.5rem;
+          background-color: #18487f;
+          p {
+            padding: 0 1rem;
+            color: #c8e2f3;
+          }
         }
-      }
-      .bottomcard {
-        p {
-          margin: 1rem 0 0 0;
+        .bottomcard {
+          p {
+            margin: 1rem 0 0 0;
+          }
         }
       }
     }
