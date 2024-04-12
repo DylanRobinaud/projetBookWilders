@@ -6,6 +6,38 @@
     font-family: "Noto Sans", sans-serif;
   }
 
+
+  nav {
+    display: flex;  
+    align-items:center;
+    background-color:#2686ff;
+
+    details {
+      width: 38%;
+    }
+    img {
+      display: flex;
+      width: 100px; 
+      
+
+    }
+  }
+  
+  header {
+   
+    background-color:#2686ff;
+    display: flex;
+    padding: 1rem;
+    max-width: 800px ;
+    justify-content: center;
+    margin: 0;
+    border: 0;
+    border-radius: 0px 0px 60px 60px;
+    -moz-border-radius: 0px 0px 60px 60px;
+    -webkit-border-radius: 0px 0px 60px 60px;
+    
+  }
+
   .card {
     background-color: aqua;
     max-width: 22rem;
