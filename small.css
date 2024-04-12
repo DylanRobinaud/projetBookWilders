@@ -11,6 +11,7 @@
     max-width: 22rem;
     border: solid 0.5rem #2686ff;
     border-radius: 1.5%;
+    margin: auto;
 
     .maincard {
       background-color: #c8e2f3;
