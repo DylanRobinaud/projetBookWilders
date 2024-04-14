@@ -1,176 +1,60 @@
-@media screen and (min-width: 426px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/*! partie DESKTOP */
 
-  nav {
+@media screen and (min-width: 741px) {
+  /*! partie acceuil */
+
+  /*! partie catalogue */
+
+  /*! partie formulaire */
+  .mainform {
     display: flex;
-    align-items: center;
-    background-color: #2686ff;
-
-    details {
-      width: 38%;
-    }
-    img {
-      display: flex;
-      width: 100px;
-    }
-  }
-
-  header {
-    background-color: #2686ff;
-    display: flex;
-    padding: 1rem;
-    max-width: 800px;
     justify-content: center;
-    margin: 0;
-    border: 0;
-    border-radius: 0px 0px 60px 60px;
-    -moz-border-radius: 0px 0px 60px 60px;
-    -webkit-border-radius: 0px 0px 60px 60px;
-  }
-
-  .container_card {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    .deck {
-      background-color: #c8e2f3;
+    .formulaire {
+      background-color: #424242;
       border-radius: 1rem;
-      border: solid 0.5rem #2686ff;
-      display: flex;
-      width: 40%;
-      height: 23rem;
-      flex-wrap: wrap;
-      justify-content: center;
+      margin: 10rem 2rem;
+      padding: 2rem;
+      width: 50%;
 
       h2 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #18487f;
-        color: #c8e2f3;
-        margin: 0 0 1.5rem 0;
-      }
-      a {
-        width: 13.6%;
-        padding: 0 0.5rem;
-        img {
-          width: 100%;
-          background-color: white;
-          border: solid 2px #2686ff;
-          border-radius: 100%;
-        }
-      }
-    }
-
-    .card {
-      max-width: 22rem;
-      border: solid 0.5rem #2686ff;
-      border-radius: 1.5%;
-      .maincard {
-        background-color: #c8e2f3;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-
-        padding: 0.5rem;
-        .topcard {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          border-radius: 0.5rem;
-          background-color: #18487f;
-          h2 {
-            margin: 1rem;
-            color: #c8e2f3;
-          }
-        }
-        .avatar {
-          display: flex;
-          justify-content: center;
-          padding-top: 2.5rem;
-          padding-bottom: 2.5rem;
-          img {
-            border-radius: 100%;
-            width: 70%;
-            background-color: white;
-          }
-        }
-        .skills {
-          border-radius: 0.5rem;
-          background-color: #18487f;
-          p {
-            padding: 0 1rem;
-            color: #c8e2f3;
-          }
-        }
-        .bottomcard {
-          p {
-            margin: 1rem 0 0 0;
-          }
-        }
-      }
-    }
-  }
-  #containerform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #formulaire {
-    margin: 1rem;
-    border-radius: 2rem;
-    padding: 1rem;
-    background-color: #c8e2f3;
-    width: 40%;
-
-    h2 {
-      text-align: center;
-      padding: 0.5rem;
-      border: 4px solid #2686ff;
-      border-radius: 5rem;
-      margin-bottom: 1rem;
-      background-color: #18487f;
-      color: #c8e2f3;
-    }
-    .form {
-      background-color: #c8e2f3;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      justify-items: center;
-      align-items: center;
-      gap: 1rem;
-      .elementform {
-        background-color: #c8e2f3;
         text-align: center;
-        gap: 1rem;
-        margin: auto;
-        input,
+        padding: 1rem 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        label {
+          padding-left: 1rem;
+          font-size: large;
+        }
+
+        input {
+          border-radius: 2rem;
+          height: 2rem;
+          padding: 1rem;
+          outline: none;
+        }
+
         select {
-          border: 2px solid #2686ff;
-          border-radius: 1rem;
-          text-align: center;
-          padding: 0.5rem;
-          background-color: #18487f;
-          color: #c8e2f3;
-          margin: auto;
+          border-radius: 2rem;
+          height: 2rem;
+          padding: 0 1rem;
+          outline: none;
         }
+
         textarea {
-          border: 2px solid #2686ff;
-          border-radius: 1rem;
-          padding: 0.5rem;
-          background-color: #18487f;
-          color: #c8e2f3;
+          border-radius: 2rem;
+          height: 20rem;
+          padding: 1rem;
+          outline: none;
+          background-color: #fefeff;
         }
-        input::placeholder,
-        textarea::placeholder {
-          color: #c8e2f3;
+
+        .bouton {
+          padding: 0;
         }
       }
     }

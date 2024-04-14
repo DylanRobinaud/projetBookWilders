@@ -1,8 +1,52 @@
+/*! partie générale influence sur toute les page HTML */
+
 :root {
   font-family: "Noto Sans", sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url(assets/4525039-binaire-code-background-abstract-technology-digital-binary-data-and-secure-data-concept-gratuit-photo.jpg);
+  background-image: url(assets/fondecran.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  nav {
+    ul {
+      background-color: #1a237e;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      img {
+        width: 3rem;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  p,
+  a,
+  label,
+  figcaption {
+    color: #fefeff;
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: #1a237e;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    a {
+      text-decoration: underline;
+      padding: 1rem;
+    }
+  }
 }
