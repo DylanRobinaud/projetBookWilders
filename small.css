@@ -66,7 +66,7 @@
     justify-content: center;
 
     .formulaire {
-      background-color: #424242;
+      background-color: var(--background-box-color);
       border-radius: 1rem;
       margin: 5rem 1rem;
       padding: 2rem;
