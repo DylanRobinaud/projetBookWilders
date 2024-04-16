@@ -1,7 +1,22 @@
 /*! partie TELEPHONE */
 
 @media screen and (max-width: 740px) {
-  /*! partie acceuil */
+  /*! partie accueil */
+  .presentation {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    padding: 50px 10px;
+    flex-direction: column;
+
+    .h2 {
+      justify-content: center;
+      }
+       .p {
+        padding: 1rem;
+       }
+   
+  }
 
   /*! partie catalogue */
   .container_card {
