@@ -125,6 +125,7 @@
     .formulaire {
       background-color: var(--background-box-color);
       border-radius: 1rem;
+      border: 5px solid var(--shadow-box-color);
       margin: 5rem 1rem;
       padding: 2rem;
       width: 70%;
