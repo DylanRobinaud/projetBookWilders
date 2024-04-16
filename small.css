@@ -122,6 +122,12 @@
     margin: 5rem 1rem;
     padding: 2rem;
     width: 70%;
+    .formulaire {
+      background-color: var(--background-box-color);
+      border-radius: 1rem;
+      margin: 5rem 1rem;
+      padding: 2rem;
+      width: 70%;
 
     h2 {
       text-align: center;
