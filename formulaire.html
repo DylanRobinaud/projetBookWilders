@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="small.css" />
     <link rel="stylesheet" href="desktop.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "-OpJhhUucwnLNZsNQ",
+        });
+      })();
+    </script>
   </head>
   <body>
     <nav>
@@ -21,34 +32,57 @@
     <main class="mainform">
       <section class="formulaire">
         <h2>Formulaire de recrutement</h2>
-        <form action="/envoyer-message" method="post">
+        <form id="recruitmentform">
           <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required />
+          <input type="text" id="userName" name="nom" required />
 
           <label for="email">E-mail :</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="userEmail" name="email" required />
 
           <label for="telephone">Téléphone (Optionnel):</label>
-          <input type="tel" id="telephone" name="telephone" />
+          <input type="tel" id="userPhone" name="telephone" />
 
           <label for="entreprise">Entreprise (Optionnel):</label>
-          <input type="text" id="entreprise" name="entreprise" />
+          <input type="text" id="nameEntreprise" name="entreprise" />
 
-          <label for="personne">Sélectionnez un Wilders :</label>
-          <select id="personne" name="personne" required>
+          <label for="wilders">Sélectionnez un Wilders :</label>
+          <select id="wilders" name="wilders" required>
             <option value="">Sélectionnez un Wilders</option>
-            <option value="personne1">Personne 1</option>
-            <option value="personne2">Personne 2</option>
-            <option value="personne3">Personne 3</option>
+            <option value="domer.bastien@gmail.com">Bastien Domer</option>
+            <option value="ann.dominique.d@gmail.com">
+              Ann Dominique Thuillier
+            </option>
+            <option value="dylan.rbnd@gmail.com">Dylan Robinaud</option>
+            <option value="mkathalina.sanchez@gmail.com">
+              Kathalina Sanchez
+            </option>
+            <option value="imanol.deleporte@outlook.com">
+              Imanol Deleporte
+            </option>
+            <option value="follainnicolas8@gmail.com">Nicolas Follain</option>
+            <option value="johnnydomingues@sfr.fr">Johnny Domingues</option>
+            <option value="vgirondin@gmail.com">Vanessa Girondin</option>
+            <option value="bertrand.larroche@hotmail.fr">
+              Bertrand Larroche
+            </option>
+            <option value="hoxhallari.oresti02@gmail.com">
+              Oresti Hoxhallari
+            </option>
+            <option value="lubin-chauvreau@laposte.net">Lubin Chauvreau</option>
+            <option value="megane.loisele@gmail.com">Mégane Loisele</option>
           </select>
 
           <label for="sujet">Sujet :</label>
-          <input type="text" id="sujet" name="sujet" required />
+          <input type="text" id="emailSujet" name="sujet" required />
 
           <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="10" required></textarea>
-
-          <input class="bouton" type="submit" value="Envoyer" />
+          <textarea
+            id="emailMessage"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+          <button type="submit">Envoyer</button>
         </form>
       </section>
     </main>
@@ -56,5 +90,6 @@
       <p>Création par Ann'Do, Bastien et Dylan</p>
       <a href="">Wild Code School</a>
     </footer>
+    <script src="contact.js"></script>
   </body>
 </html>

@@ -117,57 +117,50 @@
   justify-content: center;
 
   .formulaire {
-    background-color: #424242;
+    background-color: var(--background-box-color);
     border-radius: 1rem;
+    border: 5px solid var(--shadow-box-color);
     margin: 5rem 1rem;
     padding: 2rem;
     width: 70%;
-    .formulaire {
-      background-color: var(--background-box-color);
-      border-radius: 1rem;
-      border: 5px solid var(--shadow-box-color);
-      margin: 5rem 1rem;
-      padding: 2rem;
-      width: 70%;
 
-      h2 {
-        text-align: center;
-        padding: 1rem 0;
+    h2 {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      label {
+        padding-left: 1rem;
       }
 
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
+      input {
+        border-radius: 2rem;
+        height: 2rem;
+        padding: 1rem;
+        outline: none;
+      }
 
-        label {
-          padding-left: 1rem;
-        }
+      select {
+        border-radius: 2rem;
+        height: 2rem;
+        padding: 0 1rem;
+        outline: none;
+      }
 
-        input {
-          border-radius: 2rem;
-          height: 2rem;
-          padding: 1rem;
-          outline: none;
-        }
+      textarea {
+        border-radius: 2rem;
+        height: 20rem;
+        padding: 1rem;
+        outline: none;
+      }
 
-        select {
-          border-radius: 2rem;
-          height: 2rem;
-          padding: 0 1rem;
-          outline: none;
-        }
-
-        textarea {
-          border-radius: 2rem;
-          height: 20rem;
-          padding: 1rem;
-          outline: none;
-        }
-
-        .bouton {
-          padding: 0;
-        }
+      .bouton {
+        padding: 0;
       }
     }
   }

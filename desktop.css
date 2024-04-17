@@ -115,12 +115,14 @@
   .mainform {
     display: flex;
     justify-content: center;
+
     .formulaire {
-      background-color: #424242;
+      background-color: var(--background-box-color);
       border-radius: 1rem;
-      margin: 10rem 2rem;
+      border: 5px solid var(--shadow-box-color);
+      margin: 5rem 1rem;
       padding: 2rem;
-      width: 50%;
+      max-width: 40rem;
 
       h2 {
         text-align: center;
