@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+.light {
+  background-color: beige;
+  color: black;
+
+
+}
+
 body {
   background-image: url(assets/fondecran.png);
   background-repeat: no-repeat;
