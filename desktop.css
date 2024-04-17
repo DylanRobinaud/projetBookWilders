@@ -63,7 +63,7 @@
       .button_left {
         height: 3.1rem;
         width: 3.1rem;
-        background: url(/assets/left-arrow.svg);
+        background: url(/assets/catalogue/left-arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -73,7 +73,7 @@
       .button_right {
         height: 3.1rem;
         width: 3.1rem;
-        background: url(/assets/right-arrow.svg);
+        background: url(/assets/catalogue/right-arrow.svg);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
