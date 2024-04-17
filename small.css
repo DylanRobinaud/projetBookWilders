@@ -3,20 +3,40 @@
 @media screen and (max-width: 740px) {
   /*! partie accueil */
   .presentation {
+    background-color: var(--background-box-color);
     display: flex;
     justify-content: center;
-    margin: 5%;
-    padding: 50px 10px;
+    margin: 20rem 2rem 30rem 2rem;
+    padding: 10% 5%;
     flex-direction: column;
-
-    .h2 {
-      justify-content: center;
-      }
-       .p {
-        padding: 1rem;
-       }
-   
+    border: solid 5px white;
+    border-radius: 1rem;
   }
+    .light {
+      background-color: var(--shadow-box-color);
+      border: 5px solid var(--background-box-color);
+      .nav {
+        .listnav {
+          .theme-btn {
+            background: url(/assets/button_on.png);
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            border: none;
+            background-position: center;
+            background-size: contain;            
+          }
+        }
+      }
+    }
+    h2 {
+      text-align: center;
+      padding: 5px 1em 1rem 2em;   
+      }
+      p {
+      padding: 1rem 3rem 0;
+       }
+     
 
   /*! partie catalogue */
   .container_card {
