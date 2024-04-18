@@ -42,6 +42,15 @@ body {
     text-decoration: none;
   }
 
+  .success-message {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border: 5px solid var(--shadow-color);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
   footer {
     background-color: var(--primary-color);
     display: flex;
