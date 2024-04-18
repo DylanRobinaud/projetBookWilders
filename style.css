@@ -17,8 +17,7 @@
 body {
   background-image: url(assets/fondecran.png);
   background-repeat: no-repeat;
-  background-size: cover;
-
+  background-size: cover; 
   nav {
     ul {
       background-color: var(--primary-color);
@@ -29,6 +28,16 @@ body {
       img {
         width: 3rem;
       }
+      .theme-btn {
+        background: url(./assets/button_on.png);
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        border: none;
+        background-position: center;
+        background-size: contain;
+      }
+
     }
   }
 
