@@ -100,12 +100,58 @@ const data = [
 // Creation des tokens avec les avatars dans le deck
 const cardDeck = document.getElementById("img_deck");
 
+const createCard = (id) => {
+  const wilder = data.find((el) => el.id === id);
+
+  const container = document.getElementById("container_card");
+  container.innerHTML = "";
+
+  const section = document.createElement("section");
+  section.classList.add("card");
+  section.setAttribute("id", "card");
+
+  const templateSection = `<article class="avatar">
+      <img
+        src="${wilder.photo}"
+        alt="Photo du wilder"
+      />
+    </article>
+    <article class="rightcard">
+      <h2>${wilder.name}</h2>
+      <p>25 ans</p>
+      <p>
+        Softskill : ${wilder.softskills.join(", ")}
+      </p>
+      <div class="social">
+        <a href="${
+          wilder.github
+        }"><img src="/assets/catalogue/github.svg" /></a>
+        <a href="${wilder.linkedin}"
+          ><img src="/assets/catalogue/LinkedIn_Logo.svg.png"
+        /></a>
+      </div>
+    </article>`;
+
+  section.innerHTML = templateSection;
+  container.appendChild(section);
+};
+
+// Ecrire une fonction qui reçoit un id en param
+// cette fonction va récupérer son element cible  (container_card)
+// Puis à partir du template de section, injecter une nouvelle carte
+
 const createDeck = (cardInfo) => {
   const div = document.createElement("div");
   div.classList.add("img_wrap");
   // Template du token
+  // Injecter un bouton contenant l'image
+  // dans ce bouton, ajout un attribut onclick
+  // au clic, on appelle une fonction avec l'index de la personne en param
   const templateDeck = `
-      <img src=${cardInfo.photo} />`;
+      <button onclick="createCard(${cardInfo.id})">
+        <img src=${cardInfo.photo} />
+      </button>
+    `;
   div.innerHTML = templateDeck;
 
   return div;
@@ -136,7 +182,7 @@ turnLeft.addEventListener("click", () => {
   }
 });
 
-const card = document.getElementById("container_card");
+/*const card = document.getElementById("container_card");
 
 const createCard = () => {
   const section = document.createElement("section");
@@ -167,4 +213,4 @@ const createCard = () => {
 };
 
 const newCard = createCard();
-card.appendChild(newCard);
+card.appendChild(newCard);*/
