@@ -97,9 +97,10 @@ const data = [
   },
 ];
 
-// Creation des tokens avec les avatars dans le deck
+// Récuperation des tokens avec les avatars dans le deck
 const cardDeck = document.getElementById("img_deck");
 
+// Creation de la Carte du wilder en fonction des données de la data
 const createCard = (id) => {
   const wilder = data.find((el) => el.id === id);
 
@@ -135,16 +136,10 @@ const createCard = (id) => {
   container.appendChild(section);
 };
 
-// Ecrire une fonction qui reçoit un id en param
-// cette fonction va récupérer son element cible  (container_card)
-// Puis à partir du template de section, injecter une nouvelle carte
-
 const createDeck = (cardInfo) => {
   const div = document.createElement("div");
   div.classList.add("img_wrap");
   // Template du token
-  // Injecter un bouton contenant l'image
-  // dans ce bouton, ajout un attribut onclick
   // au clic, on appelle une fonction avec l'index de la personne en param
   const templateDeck = `
       <button onclick="createCard(${cardInfo.id})">
@@ -155,11 +150,13 @@ const createDeck = (cardInfo) => {
 
   return div;
 };
-// Creation de carte pour le tableau
+
+// Creation de token pour le deck
 for (let i = 0; i < data.length; i += 2) {
   const newCardDeck = createDeck(data[i]);
   cardDeck.appendChild(newCardDeck);
 }
+
 // Bouton droite qui change les données du deck
 const turnRight = document.getElementById("button_right");
 
@@ -170,6 +167,7 @@ turnRight.addEventListener("click", () => {
     cardDeck.appendChild(newCardDeck);
   }
 });
+
 // Bouton gauche qui change les données du deck
 const turnLeft = document.getElementById("button_left");
 
@@ -179,4 +177,34 @@ turnLeft.addEventListener("click", () => {
     const newCardDeck = createDeck(data[i]);
     cardDeck.appendChild(newCardDeck);
   }
+});
+
+const linkshiny = document.querySelectorAll("a");
+linkshiny.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    link.style.textShadow = "0px 0px 8px var(--text-color)";
+  });
+  link.addEventListener("mouseleave", () => {
+    link.style.textShadow = "0px 0px 0px var(--text-color)";
+  });
+});
+
+const leftArrow = document.getElementById("button_left");
+leftArrow.addEventListener("mouseover", () => {
+  leftArrow.style.height = "5rem";
+  leftArrow.style.width = "5rem";
+});
+leftArrow.addEventListener("mouseleave", () => {
+  leftArrow.style.height = "3.1rem";
+  leftArrow.style.width = "3.1rem";
+});
+
+const rightArrow = document.getElementById("button_right");
+rightArrow.addEventListener("mouseover", () => {
+  rightArrow.style.height = "5rem";
+  rightArrow.style.width = "5rem";
+});
+rightArrow.addEventListener("mouseleave", () => {
+  rightArrow.style.height = "3.1rem";
+  rightArrow.style.width = "3.1rem";
 });
