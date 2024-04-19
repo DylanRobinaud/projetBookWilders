@@ -3,40 +3,20 @@
 @media screen and (min-width: 741px) {
   /*! partie acceuil */
   .presentation {
-    background-color: #424242;
     display: flex;
     justify-content: center;
     margin: 20rem 10rem 30rem 10rem;
     padding: 50px 10px;
     flex-direction: column;
-    border: solid 5px white;
-    border-radius: 1rem;
-  }
-  .light {
-    background-color: var(--shadow-box-color);
-    border: 5px solid var(--background-box-color);
-    .nav {
-      .listnav {
-        .theme-btn {
-          background: url(/assets/button_on.png);
-          width: 2rem;
-          height: 2rem;
-          background-repeat: no-repeat;
-          border: none;
-          background-position: center;
-          background-size: contain;
-        }
-      }
+    
+    h2 {
+      text-align: center;
+      padding: 5px 1em 1rem 2em;
+    }
+    p {
+      padding: 1rem 3rem 0;
     }
   }
-  h2 {
-    text-align: center;
-    padding: 5px 1em 1rem 2em;
-  }
-  p {
-    padding: 1rem 3rem 0;
-  }
-
   /*! partie catalogue */
   .container_card {
     display: flex;
@@ -45,6 +25,7 @@
 
     .card {
       display: flex;
+
       background-color: var(--background-box-color);
       border-radius: 1rem;
       border: solid 5px var(--shadow-box-color);
@@ -90,6 +71,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+
       background-color: var(--background-box-color);
       max-width: 60%;
       border-radius: 1rem;
@@ -155,9 +137,6 @@
     justify-content: center;
 
     .formulaire {
-      background-color: var(--background-box-color);
-      border-radius: 1rem;
-      border: 5px solid var(--shadow-box-color);
       margin: 5rem 1rem;
       padding: 2rem;
       max-width: 40rem;
