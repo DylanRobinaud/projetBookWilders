@@ -6,6 +6,8 @@
   --background-box-color: #424242;
   --shadow-box-color: #757575;
   --text-color: #fefeff;
+  --border-img: #d0d0d0;
+  --background-img: #717171;
 }
 
 * {
