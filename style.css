@@ -60,6 +60,35 @@ body {
     padding: 1rem;
   }
 
+  .card-style {
+    background-color: var(--background-box-color);
+    border: solid 5px var(--shadow-box-color);
+    border-radius: 1rem;
+  }
+
+  &.dark {
+    .theme-btn {
+      background: url(./assets/button_off.png);
+      background-position: center;
+      background-size: contain;
+    }
+
+    .card-style {
+      background-color: var(--shadow-box-color);
+      border: solid 5px var(--background-box-color);
+      border-radius: 1rem;
+      
+      h1,
+      h2,
+      p,
+      a,
+      label,
+      figcaption {
+        color: black;
+      }
+    }   
+  }
+
   footer {
     background-color: var(--primary-color);
     display: flex;

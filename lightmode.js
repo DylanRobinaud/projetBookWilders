@@ -4,10 +4,35 @@
 //  ... "background-box-color" inversent "shadow-box-color"
 // ... 
 const lightMode = (lightButton) => {
-  const buttonlight = document.getElementsByClassName("theme-btn");
+  const buttonlight = document.getElementById("theme-btn");
   buttonlight.addEventListener("click", (event) => {
-    bouttonlight = Element.style.background = url(/assets/button_off.png);
+    // step 1: récuperer mon élément cible body
+    const body = document.querySelector("body"); 
+    // step 2: ajouter la class css "dark" (inverser, basculer, toggle, switch)
+    body.classList.toggle("dark");
+    // peut être, la piste si dark alors retirer dark ou supprimer
+    
   }) 
+  
+  
 }
 
-lightMode()
+lightMode();
+
+/**
+ * Quand on commence, on est dark, on est sur on
+ * quand je passe light, on bascule sur off
+ * quand je repasse sur drak, on re bascule sur on
+ * reste sur on
+ 
+   
+
+  
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
