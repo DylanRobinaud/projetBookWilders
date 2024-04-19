@@ -47,15 +47,15 @@
       display: flex;
       background-color: var(--background-box-color);
       border-radius: 1rem;
-      border: solid 5px white;
+      border: solid 5px var(--shadow-box-color);
       max-width: 50rem;
       height: 20rem;
       .avatar {
         display: flex;
         align-items: center;
         img {
-          border: solid 5px white;
-          background-color: #717171;
+          border: solid 5px var(--border-img);
+          background-color: var(--background-img);
           border-radius: 100%;
           width: 60%;
           margin: 3rem;
@@ -93,7 +93,7 @@
       background-color: var(--background-box-color);
       max-width: 60%;
       border-radius: 1rem;
-      border: solid 5px white;
+      border: solid 5px var(--shadow-box-color);
       .button_left {
         height: 3.1rem;
         width: 3.1rem;
@@ -119,12 +119,16 @@
         justify-content: center;
         .img_wrap {
           width: auto;
-          img {
-            margin: 1rem;
-            width: 75%;
-            border-radius: 100%;
-            background-color: #717171;
-            border: solid 2px white;
+          button {
+            border: none;
+            background-color: var(--background-box-color);
+            img {
+              margin: 1rem;
+              width: 75%;
+              border-radius: 100%;
+              background-color: var(--background-img);
+              border: solid 2px var(--border-img);
+            }
           }
         }
       }
