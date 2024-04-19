@@ -179,16 +179,6 @@ turnLeft.addEventListener("click", () => {
   }
 });
 
-const linkshiny = document.querySelectorAll("a");
-linkshiny.forEach((link) => {
-  link.addEventListener("mouseover", () => {
-    link.style.textShadow = "0px 0px 8px var(--text-color)";
-  });
-  link.addEventListener("mouseleave", () => {
-    link.style.textShadow = "0px 0px 0px var(--text-color)";
-  });
-});
-
 const leftArrow = document.getElementById("button_left");
 leftArrow.addEventListener("mouseover", () => {
   leftArrow.style.height = "5rem";

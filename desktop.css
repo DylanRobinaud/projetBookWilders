@@ -2,19 +2,23 @@
 
 @media screen and (min-width: 741px) {
   /*! partie acceuil */
-  .presentation {
+  .indexmain {
     display: flex;
     justify-content: center;
-    margin: 20rem 10rem 30rem 10rem;
-    padding: 50px 10px;
-    flex-direction: column;
-    
-    h2 {
-      text-align: center;
-      padding: 5px 1em 1rem 2em;
-    }
-    p {
-      padding: 1rem 3rem 0;
+    .presentation {
+      display: flex;
+      justify-content: center;
+      margin: 20rem 10rem 30rem 10rem;
+      padding: 50px 10px;
+      flex-direction: column;
+      max-width: 60rem;
+      h2 {
+        text-align: center;
+        padding: 5px 1em 1rem 2em;
+      }
+      p {
+        padding: 1rem 3rem 0;
+      }
     }
   }
   /*! partie catalogue */
@@ -63,7 +67,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0 17rem 0;
+    padding: 4rem 0 18rem 0;
+    margin-bottom: 5rem;
     h2 {
       padding-bottom: 3rem;
     }
@@ -117,7 +122,6 @@
     }
   }
   .card_foot {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: var(--primary-color);

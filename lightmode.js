@@ -2,22 +2,29 @@
 // Au clic, l'image du boutton change et remplacé par bouton off
 // Au clic, la variable "primary-color" devient "shadow-color"
 //  ... "background-box-color" inversent "shadow-box-color"
-// ... 
+// ...
 const lightMode = (lightButton) => {
   const buttonlight = document.getElementById("theme-btn");
   buttonlight.addEventListener("click", (event) => {
     // step 1: récuperer mon élément cible body
-    const body = document.querySelector("body"); 
+    const body = document.querySelector("body");
     // step 2: ajouter la class css "dark" (inverser, basculer, toggle, switch)
     body.classList.toggle("dark");
     // peut être, la piste si dark alors retirer dark ou supprimer
-    
-  }) 
-  
-  
-}
+  });
+};
 
 lightMode();
+
+const linkshiny = document.querySelectorAll("a");
+linkshiny.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    link.style.textShadow = "0px 0px 8px var(--text-color)";
+  });
+  link.addEventListener("mouseleave", () => {
+    link.style.textShadow = "0px 0px 0px var(--text-color)";
+  });
+});
 
 /**
  * Quand on commence, on est dark, on est sur on
