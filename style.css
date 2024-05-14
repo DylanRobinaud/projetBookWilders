@@ -19,7 +19,7 @@
 body {
   background-image: url(assets/fondecran.png);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   nav {
     ul {
       background-color: var(--primary-color);
@@ -39,7 +39,6 @@ body {
         background-position: center;
         background-size: contain;
       }
-
     }
   }
 
@@ -68,6 +67,10 @@ body {
     border-radius: 1rem;
   }
 
+  .deck-button {
+    background-color: var(--background-box-color);
+  }
+
   &.dark {
     .theme-btn {
       background: url(./assets/button_off.png);
@@ -79,7 +82,7 @@ body {
       background-color: var(--shadow-box-color);
       border: solid 5px var(--background-box-color);
       border-radius: 1rem;
-      
+
       h1,
       h2,
       p,
@@ -88,7 +91,11 @@ body {
       figcaption {
         color: black;
       }
-    }   
+    }
+
+    .deck-button {
+      background-color: var(--shadow-box-color);
+    }
   }
 
   footer {

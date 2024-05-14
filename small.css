@@ -109,7 +109,6 @@
           width: 7rem;
           button {
             border: none;
-            background-color: var(--background-box-color);
             img {
               margin: 1rem;
               width: 75%;

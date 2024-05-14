@@ -142,7 +142,7 @@ const createDeck = (cardInfo) => {
   // Template du token
   // au clic, on appelle une fonction avec l'index de la personne en param
   const templateDeck = `
-      <button onclick="createCard(${cardInfo.id})">
+      <button onclick="createCard(${cardInfo.id})" class="deck-button">
         <img src=${cardInfo.photo} />
       </button>
     `;
